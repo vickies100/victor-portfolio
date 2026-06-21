@@ -4,36 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+
+    <link rel="stylesheet" href="auth.css">
 </head>
 <body>
 
-    <h1>Login</h1>
+    <div class="container">
 
-    <form id="loginForm">
+        <h1>Welcome Back</h1>
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            required
-        >
+        <form id="loginForm">
 
-        <br><br>
+            <div class="input-group">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                >
+            </div>
 
-        <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-        >
+            <div class="input-group">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Password"
+                    required
+                >
+            </div>
 
-        <br><br>
+            <button class="btn" type="submit">
+                Login
+            </button>
 
-        <button type="submit">
-            Login
-        </button>
+        </form>
 
-    </form>
+        <div class="link">
+            Don't have an account?
+            <a href="register.html">Register</a>
+        </div>
+
+    </div>
 
     <script src="login.js"></script>
 

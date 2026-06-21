@@ -3,51 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
+    <title>Create Account</title>
+    <link rel="stylesheet" href="auth.css">
 </head>
 <body>
 
-    <h1>Create Account</h1>
+    <div class="container">
 
-    <form id="registerForm">
+        <h1>Create Account</h1>
 
-        <input
-            type="text"
-            id="name"
-            placeholder="Full Name"
-            required
-        >
+        <form id="registerForm">
 
-        <br><br>
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                >
+            </div>
 
-        <input
-            type="email"
-            id="email"
-            placeholder="Email"
-            required
-        >
+            <div class="input-group">
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                >
+            </div>
 
-        <br><br>
+            <div class="input-group">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Create Password"
+                    required
+                >
+            </div>
 
-        <input
-            type="password"
-            id="password"
-            placeholder="Password"
-            required
-        >
+            <button class="btn" type="submit">
+                Create Account
+            </button>
 
-        <br><br>
+        </form>
 
-        <button type="submit">
-            Register
-        </button>
+        <div class="link">
+            Already have an account?
+            <a href="login.html">Login</a>
+        </div>
 
-    </form>
-
-    <p>
-        Already have an account?
-        <a href="login.html">Login</a>
-    </p>
+    </div>
 
     <script src="register.js"></script>
 
